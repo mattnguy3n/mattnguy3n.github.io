@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moniker Photography</title>
+    <script>
+        
+            function validateForm(){
+                if(document.forms[0].fname.value ==""){
+                    alert("Name field cannot be empty.");
+                    return false;
+                }
+                }
+                alert("all fields are valid");
+                return true;
+            }
+    </script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href ="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+			<img src="images/logo.jpg" alt="logo" width:300px height:300px;>
+		</div>
+
+		<div id="nav">
+				<a href="index.html" class=navigation>Home Page</a>
+				<a href="collection.html" class=navigation>Colleciton</a>
+				<a href="aboutme.html" class=navigation>About Me</a>
+				<a href="contactme.html" class=navigation>Contact Me</a>
+		</div>
+        
+<form action="postform.html" method="POST" onsubmit="return validateForm()">
+            Name:<input type="text" name="fname"><br><br>
+            Email:<input type="text" name=Email><br><br>
+            Notes:<input type="text" name="notes"><br><br>
+            <input type="submit" name="submit">
+        </form>
+		<div id="main">
+		</div>
+        
+
+		<div id="footer">
+				<b>
+				<a href="contactme.html" class=navigation> Contact Me </a>
+				</b>
+				<br>
+				<br>
+				Matthew Nguyen &copy; 2017, LLC. All Rights Reserved.
+		</div>
+	
+</div>
+</body>
+</html>
